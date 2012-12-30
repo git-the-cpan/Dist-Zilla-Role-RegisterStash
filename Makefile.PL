@@ -17,11 +17,10 @@ my %WriteMakefileArgs = (
     "File::Find" => 0,
     "File::Temp" => 0,
     "Moose" => 0,
-    "MooseX::AttributeShortcuts" => 0,
     "Test::DZil" => 0,
     "Test::More" => "0.88",
     "aliased" => 0,
-    "autobox::Core" => 0,
+    "autobox::Core" => "1.24",
     "strict" => 0,
     "warnings" => 0
   },
@@ -37,7 +36,7 @@ my %WriteMakefileArgs = (
     "Moose::Role" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,37 +14,39 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8276e7598be61e5740b58cdf595cb0bf658889d9 Changes
+SHA1 a4fc5ed45137f6058c7b414599ff34960cfdc349 Changes
 SHA1 ce385024310def2b9aef6bde3f89d802d252bb19 INSTALL
 SHA1 05207cbc5971035849c1de2c7cb3babaeaccb6fb LICENSE
-SHA1 9d116623643fd6e91a65403e9550a0599b27a5df MANIFEST
-SHA1 fbd4abdcea254971b84682c4d1f21b8b1e9ec1df META.json
-SHA1 767ab09b36141a70e0eaad56d7a8f86cd08aa50c META.yml
-SHA1 7d0fbba33943acbb4d7cf7a1a0e6c2fb167d9efe Makefile.PL
-SHA1 693caccd71ac42b586b519897816783bf851c985 README
+SHA1 9be5bdf8a36ba1654db589a72c1e192027ce7bd6 MANIFEST
+SHA1 bfd817c5e7612e9afeb2a3b39ee71cad8a42031f META.json
+SHA1 2714deded03f6789e4d136b9b3bd09b5849c4c28 META.yml
+SHA1 127684696205bc66745b8c31ab14996ab85c4248 Makefile.PL
+SHA1 4b4123b861b55c0a91ef77f1aa610f7d52bbb5ad README
+SHA1 d07895f701054e865d88a9af29272abf3130cf19 cpanfile
 SHA1 5c3584e72fd21e64772145769d41b88265d95eea dist.ini
-SHA1 6c2090d3223f15eba38a67ea4da66a6f111b51c5 lib/Dist/Zilla/Role/RegisterStash.pm
+SHA1 940016ddd31ce36f089eb3831e37b65004c172c7 lib/Dist/Zilla/Role/RegisterStash.pm
 SHA1 3c029bb89a52a80842afee8589ad1e07b55077c3 t/00-compile.t
-SHA1 5aeddc299657ac3cf0c09e77bca0ed609dbf229b t/000-report-versions-tiny.t
+SHA1 cd107b132866e7ed7024d3e4be1be4f6c57aab00 t/000-report-versions-tiny.t
 SHA1 1a44c234dd74ce5a5244c3ab42b4ee060df16f0e t/author-pod-spell.t
-SHA1 478fedcded3c2922e8400c62931efe1b30461e0f t/basic.t
+SHA1 dc9e7dca7ac9d7a1646768ca7d4d4877a9482922 t/basic.t
 SHA1 d9e53b9eb245097d6534baa9ecc779de51c671e9 t/lib/Dist/Zilla/Plugin/TestAddStash.pm
-SHA1 24e707ed9ed0c7fcc62e438218161b201a3d38eb t/lib/Dist/Zilla/Stash/TestStash.pm
+SHA1 9952b1f53449288230e0fd8bd0c7b83ccefc1038 t/lib/Dist/Zilla/Stash/TestStash.pm
 SHA1 9c3627ff37f4fd5bddc34bf46cf3359eaf76a060 t/release-consistent-version.t
 SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
 SHA1 7538109d395714ac7a81f4f3a5a5f2d04b2e2012 t/release-has-version.t
 SHA1 50a6e583aad92047c9820735872513b7b8ad03c2 t/release-no-smart-comments.t
 SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
 SHA1 9948e609412a0b4ff9a0eeee6c3b39a77eeda9bc t/release-pod-coverage.t
+SHA1 8ab43e8151eb90eeadab87d2b65e5ddd1b3d440b t/release-pod-linkcheck.t
 SHA1 dd4f9ca6b67cfbad3019e4ab8303c9052658ea5d t/release-pod-syntax.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJQrbijAAoJEOd5N1CvIgQkowUH/RhsmVy/7tyiGITCJZOsfDF4
-F+eFUpWsJrPkJiGqA6tDFjK1wgeQ9Q6N2NT2TYasgM4QTeTpBjZ8dglP1ZvumvG1
-wpEWOS5moWpTKcNsuGi1BT3kDk9UxSbeMFywRbl1mH3ex60OAeYRABV3S3jtUIpW
-S2bQ+f5TS5Y+MoR04Z0IuJb6mEe2k1cDZZajb3pEvit/XrPZqY1okTTa/+OdPtp6
-dU0EzFIYvTt2H/OP68xsjPQZ1gG+kfJAbMhk0L3fllKFBEAdbhLJMTKPkf9+r2qi
-jtFac4GaD8Y0b/EOiKZpo0//TX8AytIVoTQs/GM+F95ejkG2piuNOCgvphKuzgY=
-=lT4T
+iQEcBAEBAgAGBQJQ4FyqAAoJEOd5N1CvIgQkb1AH/j5MK1D7h0zlTDv09k5xbclN
+Bi1ARAtOzFA85Ccvcnv1mukS7J8xAmWG3P9dnRLFb2Peg3yvG/S0Z+Y7picW4NfC
+cr1JYE4reOocsW0V+OLpTNwDgXxYC1Qz/e3X7iDOVuqz6e7qkQfUtYqeLmQVqju0
+UFx4pGBO5C7RaV5F4BYxS+OLF1HLZFv53Y91X5D9Ap696TFVORvhtYiYdl2wTVt0
+z77CoU2K/bArrs0ovc+//4SCnverxawjPxHhADwltzSxPFtwx3Nlgv7grze0vluu
+nJBWxjmof/18ZW4CkYFyFRoYR96KQ/21dqwg7aZtk91nUpQ5cC/p/ghs646yEBc=
+=SSUb
 -----END PGP SIGNATURE-----

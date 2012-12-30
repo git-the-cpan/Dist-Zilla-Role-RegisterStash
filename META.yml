@@ -8,11 +8,10 @@ build_requires:
   File::Find: 0
   File::Temp: 0
   Moose: 0
-  MooseX::AttributeShortcuts: 0
   Test::DZil: 0
   Test::More: 0.88
   aliased: 0
-  autobox::Core: 0
+  autobox::Core: 1.24
   strict: 0
   warnings: 0
 configure_requires:
@@ -31,16 +30,14 @@ no_index:
 provides:
   Dist::Zilla::Role::RegisterStash:
     file: lib/Dist/Zilla/Role/RegisterStash.pm
-    version: 0.001
+    version: 0.002
 requires:
   Dist::Zilla: 4.3
   Moose::Role: 0
   namespace::autoclean: 0
   perl: 5.006
-resources:
-  bugtracker: https://github.com/RsrchBoy/Dist-Zilla-Role-RegisterStash/issues
-  repository: git://github.com/RsrchBoy/Dist-Zilla-Role-RegisterStash.git
-version: 0.001
+resources: {}
+version: 0.002
 x_Dist_Zilla:
   perl:
     version: 5.016001
@@ -52,23 +49,27 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Check
       name: '@RSRCHBOY/@Git/Check'
-      version: 2.003
+      version: 2.005
     -
       class: Dist::Zilla::Plugin::Git::Commit
       name: '@RSRCHBOY/@Git/Commit'
-      version: 2.003
+      version: 2.005
     -
       class: Dist::Zilla::Plugin::Git::Tag
       name: '@RSRCHBOY/@Git/Tag'
-      version: 2.003
+      version: 2.005
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: '@RSRCHBOY/@Git/Push'
-      version: 2.003
+      version: 2.005
     -
       class: Dist::Zilla::Plugin::Git::NextVersion
       name: '@RSRCHBOY/Git::NextVersion'
-      version: 2.003
+      version: 2.005
+    -
+      class: Dist::Zilla::Plugin::ContributorsFromGit
+      name: '@RSRCHBOY/ContributorsFromGit'
+      version: 0.003
     -
       class: Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch
       name: '@RSRCHBOY/@Git::CheckFor/Git::CheckFor::CorrectBranch'
@@ -174,6 +175,10 @@ x_Dist_Zilla:
       name: '@RSRCHBOY/NoSmartCommentsTests'
       version: 0.006
     -
+      class: Dist::Zilla::Plugin::Test::Pod::LinkCheck
+      name: '@RSRCHBOY/Test::Pod::LinkCheck'
+      version: 1.001
+    -
       class: Dist::Zilla::Plugin::MetaConfig
       name: '@RSRCHBOY/MetaConfig'
       version: 4.300028
@@ -196,7 +201,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::GitHub::Meta
       name: '@RSRCHBOY/GitHub::Meta'
-      version: 0.27
+      version: 0.29
     -
       class: Dist::Zilla::Plugin::TestRelease
       name: '@RSRCHBOY/TestRelease'
@@ -216,7 +221,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::GitHub::Update
       name: '@RSRCHBOY/GitHub::Update'
-      version: 0.27
+      version: 0.29
     -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@RSRCHBOY/UploadToCPAN'
@@ -249,6 +254,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::ReadmeAnyFromPod
       name: '@RSRCHBOY/ReadmePodInRoot'
       version: 0.120120
+    -
+      class: Dist::Zilla::Plugin::CPANFile
+      name: '@RSRCHBOY/CPANFile'
+      version: 4.300028
     -
       class: Dist::Zilla::Plugin::PodWeaver
       name: '@RSRCHBOY/PodWeaver'
